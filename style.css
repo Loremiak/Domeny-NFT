@@ -1,5 +1,3 @@
-@import url(reset.css);
-@import url(responsive.css);
 :root {
 	--color-primary: rgb(230, 230, 230);
 	--color-secondary: rgba(173, 28, 182, 1);
