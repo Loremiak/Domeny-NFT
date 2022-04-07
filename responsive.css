@@ -1,0 +1,36 @@
+@import url(reset.css);
+@media screen and (max-width: 576px) {
+	.nav-list2 {
+		display: none;
+	}
+	.responsive-menu-btn {
+		display: block;
+		width: 3rem;
+		height: 3rem;
+		background-color: aliceblue;
+		color: red;
+		border: 5px solid white;
+		z-index: 3;
+	}
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.nav-list2 {
+		display: none;
+	}
+	.responsive-menu-btn {
+		display: block;
+		width: 3rem;
+		height: 3rem;
+		background-color: aliceblue;
+		color: red;
+		border: 5px solid white;
+		z-index: 3;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.techno-accept-decline-icon {
+		display: none;
+	}
+}
+@media screen and (min-width: 1200px) {
+}
