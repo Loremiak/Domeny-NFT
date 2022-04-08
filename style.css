@@ -83,22 +83,14 @@ header li a {
 	background-color: var(--color-primary);
 	height: 100vh;
 	margin-top: -0.3rem;
-}
-.techno-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	line-height: 30px;
-	padding-top: 7.5rem;
-	padding-bottom: 7.5rem;
-}
-.techno-img {
-	width: 30rem;
 }
 .techno-container-part1 {
-	margin-left: 1rem;
-	width: 32%;
+	width: 35%;
 }
 .techno-header {
 	font-size: 1.75rem;

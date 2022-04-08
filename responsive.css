@@ -13,11 +13,43 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		cursor: pointer;
 	}
 	.responsive-menu-btn span {
 		width: 100%;
 		height: 0.3rem;
 		background-color: rgba(173, 28, 182, 1);
+	}
+	.header-text {
+		font-size: 2rem;
+	}
+	/* Technology section */
+	.technology-section {
+		line-height: 95%;
+		height: 50vh;
+	}
+	.techno-accept-decline-icon {
+		display: none;
+	}
+	.decentralization-img {
+		width: 300px;
+		margin-right: 1rem;
+	}
+	.techno-header {
+		line-height: 95%;
+		font-size: 1.25rem;
+	}
+	.techno-description {
+		font-size: 1rem;
+		margin: 0.5rem 0;
+	}
+	.techno-list1 {
+		font-size: 0.75rem;
+	}
+	.techno-list2 {
+		font-size: 0.5rem;
+		line-height: 10px;
+		margin-left: 0.85rem;
 	}
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -35,11 +67,43 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		cursor: pointer;
 	}
 	.responsive-menu-btn span {
 		width: 100%;
 		height: 0.3rem;
 		background-color: rgba(173, 28, 182, 1);
+	}
+	.header-text {
+		font-size: 3rem;
+	}
+	/* Technology section */
+	.technology-section {
+		line-height: 95%;
+		height: 50vh;
+	}
+	.techno-accept-decline-icon {
+		display: none;
+	}
+	.decentralization-img {
+		width: 300px;
+		margin-right: 1rem;
+	}
+	.techno-header {
+		line-height: 95%;
+		font-size: 1.25rem;
+	}
+	.techno-description {
+		font-size: 1rem;
+		margin: 0.5rem 0;
+	}
+	.techno-list1 {
+		font-size: 0.75rem;
+	}
+	.techno-list2 {
+		font-size: 0.5rem;
+		line-height: 10px;
+		margin-left: 0.85rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -57,11 +121,28 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		cursor: pointer;
 	}
 	.responsive-menu-btn span {
 		width: 100%;
 		height: 0.3rem;
 		background-color: rgba(173, 28, 182, 1);
+	}
+	/* Technology section */
+	.technology-section {
+		line-height: 95%;
+		height: 70vh;
+	}
+	.techno-accept-decline-icon {
+		display: none;
+	}
+	.decentralization-img {
+		width: 400px;
+		margin-right: 1rem;
+	}
+	.techno-header {
+		line-height: 95%;
+		font-size: 1.5rem;
 	}
 }
 @media screen and (min-width: 1200px) {
