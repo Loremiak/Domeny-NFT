@@ -9,11 +9,8 @@
 	--color-transparent: transparent;
 	--color-gradient: linear-gradient(
 		90deg,
-		rgba(35, 0, 61, 1),
-		rgba(123, 0, 217, 1),
-		rgba(173, 28, 182, 1),
-		rgba(32, 0, 164, 1),
-		rgba(9, 122, 210, 1)
+		rgba(173, 28, 182, 1) 0%,
+		rgba(9, 122, 210, 1) 100%
 	);
 }
 body {
@@ -81,7 +78,7 @@ header li a {
 /* Techno section */
 .technology-section {
 	background-color: var(--color-primary);
-	height: 100vh;
+	height: 80vh;
 	margin-top: -0.3rem;
 	display: flex;
 	align-items: center;
@@ -90,30 +87,39 @@ header li a {
 	line-height: 30px;
 }
 .techno-container-part1 {
-	width: 35%;
+	width: 30%;
+	margin-left: 3%;
 }
 .techno-header {
-	font-size: 1.75rem;
+	font-size: 1.65rem;
 	font-weight: 700;
 	line-height: 35px;
 }
 .techno-description {
-	color: var(--color-secondary);
+	background-image: var(--color-gradient);
+	width: 50%;
+	color: var(--color-transparent);
 	font-weight: 600;
 	font-size: 1.25rem;
 	margin: 1rem 0;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 .techno-list1 {
 	font-size: 1rem;
-	margin-left: 1rem;
+	margin-left: 4%;
 }
-.techno-accept-decline-icon {
-	height: 22.5rem;
-	width: 4rem;
+.techno-img {
+	position: absolute;
+	width: 57%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 18rem;
+}
+.techno-accept-decline-icon {
+	height: 3rem;
+	width: 3rem;
 }
 /* Border section */
 .border-section {
@@ -154,7 +160,7 @@ header li a {
 }
 .service-description {
 	font-size: 2rem;
-	margin-top: -5rem;
+	margin-top: 5rem;
 }
 .service-browsers {
 	display: flex;
@@ -198,6 +204,8 @@ header li a {
 	margin-top: 0.65rem;
 	margin-bottom: -0.5rem;
 	font-size: 1rem;
+	color: var(--color-secondary);
+	font-weight: 500;
 }
 .desktop-android-ios {
 	width: 2rem;
@@ -238,18 +246,16 @@ header li a {
 	background-color: var(--color-teritiary);
 }
 .service-desc-foot {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 1.25rem;
-	margin-top: 2rem;
+	font-size: 1rem;
+	padding-top: 8rem;
+	transform: skewY(-4deg);
 }
 /* Possibility section */
 .possibility-section {
 	background-color: rgb(255, 213, 255);
 	height: 240vh;
 	transform: skewY(-4deg);
-	margin-top: -3.5rem;
+	margin-top: -5rem;
 }
 .possibility-section-h {
 	transform: skewY(4deg);
@@ -408,7 +414,7 @@ header li a {
 /* Footer section*/
 .footer-section {
 	width: 100%;
-	height: 60vh;
+	height: 35vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -440,8 +446,12 @@ header li a {
 .footer-copyright-name {
 	font-weight: bold;
 	color: var(--color-secondary);
+	background-image: var(--color-gradient);
+	color: var(--color-transparent);
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 .come-back {
 	align-self: flex-end;
-	margin-top: -2rem;
+	margin-top: -12rem;
 }
