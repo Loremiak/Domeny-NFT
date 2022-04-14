@@ -3,27 +3,14 @@
 		display: none;
 	}
 	.responsive-menu-btn {
-		width: 3rem;
-		height: 3rem;
-		background-color: transparent;
-		z-index: 3;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		cursor: pointer;
-		margin-right: 30%;
-	}
-	.responsive-menu-btn span {
-		width: 100%;
-		height: 0.3rem;
-		background-color: rgba(173, 28, 182, 1);
+		margin-right: 35%;
 	}
 	.header-text {
 		font-size: 2rem;
 	}
 	/* Technology section */
-	.technology-section {
+	/*.technology-section {
 		line-height: 95%;
 		height: 50vh;
 	}
@@ -31,7 +18,6 @@
 		display: none;
 	}
 	.decentralization-img {
-		width: 300px;
 		margin-right: 1rem;
 	}
 	.techno-header {
@@ -49,11 +35,18 @@
 		font-size: 0.5rem;
 		line-height: 10px;
 		margin-left: 0.85rem;
-	}
+	}*/
 }
 @media screen and (max-width: 768px) {
+	.nav-list2 {
+		display: none;
+	}
 	.header-text {
 		font-size: 3rem;
+	}
+	.responsive-menu-btn {
+		display: flex;
+		margin-right: 15%;
 	}
 	/* Technology section */
 }
@@ -61,13 +54,13 @@
 	.nav-list2 {
 		display: none;
 	}
-	/* .responsive-menu-btn span {
-		width: 100%;
-		height: 0.3rem;
-		background-color: rgba(173, 28, 182, 1);
-	} */
-	/* Technology section */
-	/* .technology-section {
+	.responsive-menu-btn {
+		display: flex;
+		margin-right: 7.5%;
+	}
+}
+/* Technology section */
+/* .technology-section {
 		line-height: 95%;
 		height: 70vh;
 	}
@@ -83,4 +76,3 @@
 		font-size: 1.5rem;
 	}
  */
-}
