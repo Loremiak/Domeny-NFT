@@ -70,19 +70,15 @@ table {
 	position: fixed;
 	justify-content: space-between;
 	align-items: center;
-	height: 12vh;
-	width: 100vh;
+	height: 10vh;
+	width: 100vw;
 	z-index: 2;
 	backdrop-filter: blur(8px);
 }
-.nav-bar div {
-	width: 15%;
-}
 .logo {
-	width: 120px;
-	height: 95px;
+	width: 90px;
+	height: 65px;
 	z-index: 1;
-	margin-right: 15rem;
 }
 .nav-list {
 	display: flex;
@@ -106,21 +102,21 @@ table {
 }
 .responsive-menu-btn {
 	display: flex;
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	background-color: transparent;
-	z-index: 3;
+	z-index: 1;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	cursor: pointer;
 	position: relative;
-	margin-right: 54%;
+	margin-right: 10%;
 }
 .responsive-menu-btn span {
 	width: 100%;
-	height: 0.3rem;
-	background-color: rgba(173, 28, 182, 1);
+	height: 0.2rem;
+	background-color: var(--color-secondary);
 }
 .header-text {
 	position: absolute;
@@ -148,20 +144,21 @@ table {
 
 .technology-section {
 	background-color: var(--color-primary);
-	height: 80vh;
+	height: fit-content;
 	margin-top: -0.3rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap-reverse;
 }
 .decentralization-img {
 	width: 70vw;
-	margin: 0 auto;
+	max-width: 350px;
+	margin: 1rem auto;
 }
 .techno-container-part1 {
-	width: 70vw;
-	margin: 0 auto;
+	width: 65%;
+	margin: 2rem auto;
 }
 .techno-header {
 	line-height: 22.5px;
@@ -181,6 +178,7 @@ table {
 .techno-list1 {
 	font-size: 0.65rem;
 	margin-left: 4%;
+	list-style: square;
 }
 .techno-list2 {
 	font-size: 0.5rem;
@@ -194,7 +192,6 @@ table {
 /* Border section */
 
 .border-section {
-	background: rgb(35, 0, 61);
 	background: linear-gradient(
 		90deg,
 		rgba(35, 0, 61, 1) 0%,
@@ -203,20 +200,20 @@ table {
 		rgba(32, 0, 164, 1) 75%,
 		rgba(9, 122, 210, 1) 100%
 	);
-	height: 12vh;
+	height: fit-content;
 	display: flex;
 	align-items: baseline;
 	justify-content: space-evenly;
-	padding-top: 1rem;
+	padding: 1rem 0;
 	text-align: center;
 }
 .border-header {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	color: var(--color-white);
 }
 .border-description {
-	font-size: 0.5rem;
+	font-size: 0.45rem;
 	color: var(--color-white);
 }
 
@@ -224,14 +221,14 @@ table {
 
 .service-section {
 	background-color: var(--color-white);
-	height: 70vh;
+	height: fit-content;
 	width: 75vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
-	margin: 0 auto;
+	margin: 3rem auto;
 }
 .service-description {
 	font-size: 1.25rem;
@@ -240,6 +237,7 @@ table {
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
+	margin: 2rem;
 }
 .sec-browsers-div {
 	text-align: center;
@@ -301,9 +299,10 @@ table {
 
 .possibility-section {
 	background-color: rgb(255, 213, 255);
-	height: 240vh;
+	height: fit-content;
 	transform: skewY(-4deg);
 	margin-top: -2rem;
+	padding-bottom: 2rem;
 }
 .possibility-section-h {
 	transform: skewY(4deg);
@@ -311,7 +310,7 @@ table {
 .possibility-header {
 	font-size: 1.25rem;
 	font-weight: bold;
-	width: 80vw;
+	width: 80%;
 	text-align: center;
 	padding-top: 3rem;
 	margin: 1rem auto;
@@ -324,8 +323,8 @@ table {
 	flex-flow: column wrap;
 }
 .possibility-container img {
-	width: 75vw;
-	height: 75vw;
+	width: 50vw;
+	max-width: 350px;
 }
 .possibility-desc-div {
 	width: 75vw;
@@ -333,55 +332,62 @@ table {
 	margin-top: 1rem;
 }
 .possibility-img-list-address {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+.possibility-img-list-address img {
+	width: 75vw;
+	max-width: 350px;
+}
 
 /* Offerts section */
+
 .offerts-section {
-	/*background-color: rgb(84, 146, 146);*/
-	width: 100%;
-	height: 120vh;
+	width: 100vw;
+	height: auto;
 }
-.three-offerts-grid-sec {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-gap: 2.4rem;
-	height: 70vh;
-	width: 64%;
-	margin-top: 5rem;
-	margin: 5rem auto;
+.three-offerts-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
-.offerts-grid {
+.offerts-box {
+	display: flex;
+	flex-direction: column;
 	border-style: solid;
 	border-width: 8px;
 	border-image: var(--color-gradient1);
-	height: 100%;
-	width: 100%;
+	height: 440px;
+	width: 55vw;
+	min-width: 220px;
+	max-width: 300px;
 	overflow: hidden;
 	z-index: 1;
+	margin: 2rem 0;
 }
 .offerts-header {
 	display: block;
 	width: 100%;
-	height: 8.5vh;
+	height: auto;
+	padding: 0.5rem;
 	background-color: var(--color-secondary);
 }
 .offerts-header p {
 	color: var(--color-white);
 	text-align: center;
-	padding-top: 0.65rem;
-	font-size: 2rem;
+	font-size: 1.75rem;
 }
 .offerts {
 	margin: 0.75rem 0 0 1.5rem;
-	font-size: 1rem;
+	font-size: 0.85rem;
 	width: 85%;
 }
 .offerts li {
 	margin-bottom: 0.25rem;
+	list-style: square;
 }
 .offerts-domain-flex-container {
 	display: flex;
@@ -390,7 +396,7 @@ table {
 	justify-content: flex-start;
 }
 .offerts-domain {
-	font-size: 0.75rem;
+	font-size: 0.65rem;
 	margin: 0.5rem 0 0 1.5rem;
 	color: var(--color-secondary);
 	font-weight: 600;
@@ -404,36 +410,30 @@ table {
 	font-style: italic;
 }
 .offerts-button {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 1rem;
-	margin: 1rem auto 0.5rem auto;
-	width: 14vw;
-	height: 6vh;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 130px;
+	height: 50px;
 	text-align: center;
 	cursor: pointer;
 	font-family: inherit;
 	border: 3px solid var(--color-black);
 	color: var(--color-teritiary);
 }
-.offerts-button:hover {
-	color: var(--color-white);
-	background-color: var(--color-secondary);
-	transform: scale(1.1, 1.1);
-	font-weight: bolder;
-	transition: all 0.4s ease-out;
-}
-.opt1 {
-	margin-top: 11.2rem;
-}
-.opt2 {
-	margin-top: 4.55rem;
-}
+
 /*FAQ section*/
+
 .faq-section {
 	transform: skewY(-4deg);
 	width: 100%;
-	height: 130vh;
+	height: fit-content;
 	background-color: var(--color-teritiary);
+	padding-bottom: 1.5rem;
 }
 .faq-container {
 	transform: skewY(4deg);
@@ -441,40 +441,58 @@ table {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 8rem;
+	padding-top: 3rem;
 	color: var(--color-white);
 }
 .faq-container h1 {
-	font-size: 3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
-	margin-bottom: 5rem;
+	margin-bottom: 1rem;
 }
 .faq-div {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 80%;
 }
 .faq-div h3 {
-	font-size: 1.5rem;
-	margin: 1rem 0;
+	font-size: 1rem;
+	margin: 0.5rem 0;
 }
+.faq-div p {
+	font-size: 0.75rem;
+}
+
 /* Footer section*/
+
 .footer-section {
 	width: 100%;
-	height: 35vh;
+	height: 25vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 3.5rem;
+	margin-top: 1rem;
+}
+.footer-section h1 {
+	text-align: center;
+	font-size: 1.35rem;
+	color: var(--color-secondary);
+	margin-bottom: -1rem;
+}
+.footer-section p {
+	color: var(--color-teritiary);
 }
 .footer-icons {
-	width: 40%;
+	width: 50%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	cursor: pointer;
+}
+.footer-icons-t {
+	width: 15vw;
+	max-width: 50px;
 }
 .footer-section hr {
 	width: 100%;
@@ -488,7 +506,8 @@ table {
 	width: 100%;
 }
 .footer-copyright p {
-	font-size: 1rem;
+	font-size: 0.75rem;
+	color: var(--color-black);
 }
 .footer-copyright-name {
 	font-weight: bold;
@@ -499,14 +518,15 @@ table {
 	-webkit-background-clip: text;
 }
 .come-back {
+	position: absolute;
 	align-self: flex-end;
-	margin-top: -12rem;
+}
+.come-back img {
+	width: 25vw;
+	max-width: 100px;
 }
 
 @media screen and (min-width: 576px) {
-	.nav-list {
-		display: none;
-	}
 	.header-text {
 		font-size: 2rem;
 	}
@@ -826,7 +846,9 @@ table {
 		padding-top: 8rem;
 		transform: skewY(-4deg);
 	}
+
 	/* Possibility section */
+
 	.possibility-section {
 		background-color: rgb(255, 213, 255);
 		height: 240vh;
@@ -867,7 +889,9 @@ table {
 		align-items: center;
 		justify-content: center;
 	}
+
 	/* Offerts section */
+
 	.offerts-section {
 		/*background-color: rgb(84, 146, 146);*/
 		width: 100%;
