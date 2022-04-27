@@ -134,10 +134,9 @@ table {
 	word-break: break-word;
 }
 .video-background {
+	margin-top: -8.5rem;
 	width: 100%;
-	margin-top: 0;
 	height: 100vh;
-	margin-top: -8rem;
 	border: 0;
 }
 
@@ -349,13 +348,14 @@ table {
 
 .offerts-section {
 	width: 100vw;
-	height: auto;
+	height: fit-content;
+	padding: 2rem 0;
 }
 .three-offerts-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 }
 .offerts-box {
 	display: flex;
@@ -363,7 +363,7 @@ table {
 	border-style: solid;
 	border-width: 8px;
 	border-image: var(--color-gradient1);
-	height: 440px;
+	height: 550px;
 	width: 55vw;
 	min-width: 220px;
 	max-width: 300px;
@@ -455,7 +455,7 @@ table {
 .faq-div {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 65%;
 }
 .faq-div h3 {
 	font-size: 1rem;
@@ -491,11 +491,10 @@ table {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	cursor: pointer;
 }
-.footer-icons-t {
-	width: 15vw;
-	max-width: 50px;
+.fa-solid,
+.fa-brands {
+	font-size: 50px;
 }
 .footer-section hr {
 	width: 100%;
@@ -514,7 +513,6 @@ table {
 }
 .footer-copyright-name {
 	font-weight: bold;
-	color: var(--color-secondary);
 	background-image: var(--color-gradient);
 	color: var(--color-transparent);
 	background-clip: text;
@@ -587,6 +585,9 @@ table {
 	.three-offerts-box {
 		width: 50%;
 		margin: 0 auto;
+	}
+	.offerts-box {
+		height: 480px;
 	}
 
 	/*FAQ section*/
@@ -864,212 +865,93 @@ table {
 	.path {
 		border: 3px solid black;
 		height: 0.5rem;
-		width: 10.4rem;
+		width: 10rem;
 		margin: 0 -0.1rem;
 		background-color: var(--color-teritiary);
 	}
 	.service-desc-foot {
 		font-size: 1rem;
-		padding-top: 8rem;
+		padding-top: 6rem;
 	}
 
-	/* Possibility section TU TERAZ*/
+	/* Possibility section */
 
 	.possibility-section {
-		height: fit-content;
-		margin-top: -3rem;
-		padding-bottom: 4rem;
+		padding-bottom: 5rem;
 	}
 	.possibility-header {
 		font-size: 2.25rem;
-		width: 62vw;
-		padding-top: 3rem;
+		width: 50%;
+		margin-bottom: 1.5rem;
 	}
 	.possibility-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		flex-direction: row;
+		gap: 5rem;
 	}
-	.possibility-container img {
-		width: 25rem;
-		height: 25rem;
+	.possibility-container:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+	.possibility-img-list-address img {
+		width: 38rem;
+		height: auto;
+		max-width: none;
 	}
 	.possibility-desc-div {
-		flex-direction: column;
 		width: 26vw;
 		font-size: 1.25rem;
-		padding-top: -4rem;
-		margin-left: 3rem;
-	}
-	.possibility-img-list-address {
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	/* Offerts section */
 
 	.offerts-section {
-		/*background-color: rgb(84, 146, 146);*/
 		width: 100%;
-		height: 120vh;
 	}
-	.three-offerts-grid-sec {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-gap: 2.4rem;
-		height: 70vh;
-		width: 64%;
-		margin-top: 5rem;
-		margin: 5rem auto;
-	}
-	.offerts-grid {
-		border-style: solid;
-		border-width: 8px;
-		border-image: var(--color-gradient1);
-		height: 100%;
+	.three-offerts-box {
+		flex-flow: row wrap;
 		width: 100%;
-		overflow: hidden;
-		z-index: 1;
-	}
-	.offerts-header {
-		display: block;
-		width: 100%;
-		height: 8.5vh;
-		background-color: var(--color-secondary);
+		gap: 2rem;
 	}
 	.offerts-header p {
-		color: var(--color-white);
-		text-align: center;
-		padding-top: 0.65rem;
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	.offerts {
-		margin: 0.75rem 0 0 1.5rem;
 		font-size: 1rem;
-		width: 85%;
-	}
-	.offerts li {
-		margin-bottom: 0.25rem;
-	}
-	.offerts-domain-flex-container {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: flex-start;
 	}
 	.offerts-domain {
 		font-size: 0.75rem;
-		margin: 0.5rem 0 0 1.5rem;
-		color: var(--color-secondary);
-		font-weight: 600;
-	}
-	.offerts-footer p {
-		display: block;
-		width: 80%;
-		text-align: center;
-		margin: auto;
-		font-size: 0.6rem;
-		font-style: italic;
-	}
-	.offerts-button {
-		display: block;
-		font-size: 1rem;
-		margin: 1rem auto 0.5rem auto;
-		width: 14vw;
-		height: 6vh;
-		text-align: center;
-		cursor: pointer;
-		font-family: inherit;
-		border: 3px solid var(--color-black);
-		color: var(--color-teritiary);
 	}
 	.offerts-button:hover {
 		color: var(--color-white);
 		background-color: var(--color-secondary);
-		transform: scale(1.1, 1.1);
+		transform: scale(1.1);
 		font-weight: bolder;
-		transition: all 0.4s ease-out;
+		transition: all 0.4s ease-in-out;
 	}
-	.opt1 {
-		margin-top: 11.2rem;
-	}
-	.opt2 {
-		margin-top: 4.55rem;
-	}
+
 	/*FAQ section*/
+
 	.faq-section {
-		transform: skewY(-4deg);
-		width: 100%;
-		height: 130vh;
-		background-color: var(--color-teritiary);
-	}
-	.faq-container {
-		transform: skewY(4deg);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding-top: 8rem;
-		color: var(--color-white);
+		padding: 3rem;
 	}
 	.faq-container h1 {
 		font-size: 3rem;
-		font-weight: bold;
-		margin-bottom: 5rem;
-	}
-	.faq-div {
-		display: flex;
-		flex-direction: column;
-		width: 50%;
+		margin-bottom: 2rem;
 	}
 	.faq-div h3 {
-		font-size: 1.5rem;
-		margin: 1rem 0;
+		margin: 1.25rem 0;
 	}
+
 	/* Footer section*/
+
 	.footer-section {
-		width: 100%;
-		height: 35vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 3.5rem;
+		height: 30vh;
+		margin-top: 2rem;
 	}
 	.footer-icons {
 		width: 40%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
 		cursor: pointer;
 	}
-	.footer-section hr {
-		width: 100%;
-		height: 1px;
-	}
-	.footer-copyright {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	}
-	.footer-copyright p {
-		font-size: 1rem;
-	}
-	.footer-copyright-name {
-		font-weight: bold;
-		color: var(--color-secondary);
-		background-image: var(--color-gradient);
-		color: var(--color-transparent);
-		background-clip: text;
-		-webkit-background-clip: text;
-	}
 	.come-back {
-		align-self: flex-end;
-		margin-top: -12rem;
+		margin-top: 3rem;
 	}
 }
