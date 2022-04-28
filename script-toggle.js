@@ -1,6 +1,11 @@
-let responsiveMenuBtn = document.getQuerySelector(".responsive-menu-btn");
-let phoneNav = document.querySelector(".nav-phone");
+let menuBurgerBtn = document.querySelector(".responsive-menu-btn");
+let navList = document.querySelector(".nav-list");
 
-responsiveMenuBtn.onlick = function () {
+menuBurgerBtn.addEventListener("click", () => {
+	console.log(1);
+});
+
+menuBurgerBtn.onlick = function () {
+	console.log("1");
 	phoneNav.classList.toggle("active");
 };
