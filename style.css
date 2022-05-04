@@ -26,25 +26,10 @@ a {
 	text-decoration: none;
 }
 
-input,
-button,
-textarea,
-select {
-	font-family: inherit;
-}
-
 button {
 	border: none;
 	cursor: pointer;
-}
-
-textarea {
-	resize: vertical;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	font-family: inherit;
 }
 
 :root {
@@ -68,14 +53,14 @@ table {
 .nav-bar {
 	display: flex;
 	position: fixed;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	height: 10vh;
-	width: 100vw;
+	width: 100%;
 	z-index: 2;
 	backdrop-filter: blur(8px);
+	margin: 0 auto;
 }
-
 .logo {
 	width: 90px;
 	height: 65px;
@@ -96,7 +81,7 @@ table {
 	list-style: none;
 	font-size: 2.5rem;
 	transform: translateX(200%);
-	font-weight: bold;
+	font-weight: bolder;
 }
 .nav-list.active {
 	transform: translateX(0%);
@@ -145,7 +130,7 @@ table {
 .technology-section {
 	background-color: var(--color-primary);
 	height: fit-content;
-	margin-top: -0.3rem;
+	margin-top: -0.65rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -175,17 +160,12 @@ table {
 	-webkit-background-clip: text;
 	line-height: 22px;
 }
-.techno-list1 {
+.techno-list {
 	font-size: 0.65rem;
 	margin-left: 4%;
 	list-style: square;
 }
-.techno-list2 {
-	font-size: 0.5rem;
-	line-height: 10px;
-	margin-left: 0.85rem;
-}
-.techno-img {
+.techno-accept-decline-icon {
 	display: none;
 }
 
@@ -479,11 +459,11 @@ table {
 .footer-section h1 {
 	text-align: center;
 	font-size: 1.35rem;
-	color: var(--color-secondary);
+	color: var(--color-black);
 	margin-bottom: -1rem;
 }
 .footer-section p {
-	color: var(--color-teritiary);
+	color: var(--color-black);
 }
 .footer-icons {
 	width: 50%;
@@ -495,6 +475,7 @@ table {
 .fa-solid,
 .fa-brands {
 	font-size: 50px;
+	color: purple;
 }
 .footer-section hr {
 	width: 100%;
@@ -543,7 +524,7 @@ table {
 	.techno-description {
 		line-height: 26px;
 	}
-	.techno-list1 {
+	.techno-list {
 		font-size: 0.75rem;
 	}
 
@@ -633,11 +614,8 @@ table {
 		font-size: 1.25rem;
 		width: 85%;
 	}
-	.techno-list1 {
+	.techno-list {
 		font-size: 0.75rem;
-	}
-	.techno-img {
-		display: none;
 	}
 
 	/* Border section */
@@ -784,9 +762,12 @@ table {
 	.technology-section {
 		height: 80vh;
 		line-height: 28px;
+		justify-content: center;
 	}
 	.techno-container-part1 {
 		width: 44%;
+		margin-left: 3rem;
+		position: relative;
 	}
 	.techno-header {
 		font-size: 1.5rem;
@@ -795,20 +776,16 @@ table {
 	.techno-description {
 		font-size: 1.25rem;
 	}
-	.techno-list1 {
+	.techno-list {
 		font-size: 0.95rem;
 	}
-	.techno-img {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		margin-top: 14rem;
-	}
 	.techno-accept-decline-icon {
+		display: block;
 		height: 3rem;
 		width: 3rem;
 		position: absolute;
+		bottom: 0;
+		right: 25%;
 	}
 
 	/* Border section */
@@ -949,7 +926,12 @@ table {
 	}
 	.footer-icons {
 		width: 40%;
+	}
+	.footer-icons i {
 		cursor: pointer;
+	}
+	.footer-icons i:hover {
+		color: rgb(79, 0, 79);
 	}
 	.come-back {
 		margin-top: 3rem;
