@@ -435,7 +435,7 @@ button {
 .faq-div {
 	display: flex;
 	flex-direction: column;
-	width: 65%;
+	width: 50%;
 }
 .faq-div h3 {
 	font-size: 1rem;
@@ -443,6 +443,10 @@ button {
 }
 .faq-div p {
 	font-size: 0.75rem;
+}
+summary {
+	display: flex;
+	cursor: pointer;
 }
 
 /* Footer section*/
@@ -775,6 +779,7 @@ button {
 	}
 	.techno-description {
 		font-size: 1.25rem;
+		margin: 0.75rem 0;
 	}
 	.techno-list {
 		font-size: 0.95rem;
@@ -824,31 +829,10 @@ button {
 		height: 4rem;
 		width: 4rem;
 	}
-	.sec-roadmap-div {
-		display: flex;
-		justify-content: space-between;
-	}
-	.circle {
-		border: 3px solid black;
-		height: 1rem;
-		width: 1rem;
-		border-radius: 50%;
-		background-color: white;
-		margin-top: -0.25rem;
-	}
-	.here-is {
-		background-color: var(--color-secondary);
-	}
-	.path {
-		border: 3px solid black;
-		height: 0.5rem;
-		width: 10rem;
-		margin: 0 -0.1rem;
-		background-color: var(--color-teritiary);
-	}
+
 	.service-desc-foot {
 		font-size: 1rem;
-		padding-top: 6rem;
+		margin-bottom: -3rem;
 	}
 
 	/* Possibility section */
@@ -926,6 +910,30 @@ button {
 	}
 	.footer-icons {
 		width: 40%;
+	}
+	#copy-btn {
+		position: relative;
+	}
+	.copy-info {
+		position: absolute;
+		width: 100px;
+		height: 45px;
+		background-color: var(--color-teritiary);
+		color: aliceblue;
+		top: -50px;
+		left: -25px;
+		text-align: center;
+		padding: 5px;
+	}
+	.copy-info::after {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background-color: var(--color-teritiary);
+		bottom: -6px;
+		left: 42.5px;
+		transform: rotate(45deg);
 	}
 	.footer-icons i {
 		cursor: pointer;
