@@ -1,5 +1,10 @@
-const copyMail = () => {
+const copyMailBtn = document.querySelector("#copy-btn");
+
+copyMailBtn.addEventListener("click", () => {
 	navigator.clipboard.writeText("mrlorem@gmail.com");
-	const copyMessageSpan = document.createElement("span");
-	copyMessageSpan.className = "copy-info";
-};
+
+	let copyMessageDOM = document.createElement("span");
+	copyMessageDOM.classList.add("copy-info");
+	copyMessageDOM.innerText = "Mail skopiowany!";
+	copyMessageDOM.appendChild(copyMailBtn);
+});

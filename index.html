@@ -51,36 +51,20 @@
 						<a href="">Kontakt</a>
 					</li>
 				</ul>
-				<button class="responsive-menu-btn">
-					<span></span><span></span><span></span>
+				<button class="responsive-menu-btn" id="hamburger">
+					<i class="fa-solid fa-bars"></i>
 				</button>
 			</nav>
 		</header>
 
 		<main>
 			<section class="video">
-				<!-- <iframe
-					id="video-background"
-					src="https://player.vimeo.com/video/687078446?h=b10a0b4163&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0"
-					https://www.youtube.com/embed/kneJrr5s51k?modestbranding=1&showinfo=0&showsearch=0&rel=1&loop=1&controls=0&autoplay=1&iv_load_policy=3&playlist=kneJrr5s51k
-					allow="autoplay"
-					allowfullscreen
-				></iframe>
-				<script src="https://player.vimeo.com/api/player.js"></script> -->
-
 				<video class="video-background" autoplay muted loop>
 					<source
 						src="dece/4K Futuristic Network Technology Plexus Concept Loop.mp4"
 					/>
 					You should see video here.
 				</video>
-				<!-- <iframe
-					class="video-background"
-					src="dece/4K Futuristic Network Technology Plexus Concept Loop.mp4"
-					title=" "
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-					allowfullscreen
-				></iframe> -->
 				<h1 class="header-text">Twoja własna domena NFT</h1>
 			</section>
 
@@ -520,65 +504,49 @@
 					<div class="faq-div">
 						<details>
 							<summary>
-								<h3>
-									Czy będę miał możliwość aby wysłać domenę na inny adres?
-								</h3>
+								Czy będę miał możliwość aby wysłać domenę na inny adres?
 							</summary>
 							<p>
 								Tak. Domena jest traktowana tak samo jak NFT i tak samo można ją
 								dowolnie przesyłać na różne adresy portfeli krypto walutowych.
 							</p>
 						</details>
-					</div>
-
-					<div class="faq-div">
 						<details>
-							<summary><h3>Jakie są formy płatności?</h3></summary>
+							<summary>Jakie są formy płatności?</summary>
 							<p>
 								Aktualnie jedyną możliwością jest przelew na podany przeze mnie
 								nr konta. Z czasem będzie dostępnych więcej opcji.
 							</p>
 						</details>
-					</div>
-					<div class="faq-div">
 						<details>
-							<summary>
-								<h3>W jaki sposób będę mógł zobaczyć stronę NFT?</h3>
-							</summary>
+							<summary>W jaki sposób będę mógł zobaczyć stronę NFT?</summary>
 							<p>
 								Musisz użyć mirroring service, wtyczki do przeglądarki albo
 								przeglądarki która wspiera domeny NFT.
 							</p>
 						</details>
-					</div>
-					<div class="faq-div">
 						<details>
 							<summary>
-								<h3>
-									Czy będę mógł znaleźć swoją domenę w wyszukiwarce
-									internetowej?
-								</h3>
+								Czy będę mógł znaleźć swoją domenę w wyszukiwarce internetowej?
 							</summary>
 							<p>
 								Większości wyszukiwarek obecnie nie indeksuję domen NFT, a więc
 								nie.
 							</p>
 						</details>
-					</div>
-					<div class="faq-div">
+
 						<details>
 							<summary>
-								<h3>Czy domeny NFT są częścią ICANN lub tradycyjnych DNS?</h3>
+								Czy domeny NFT są częścią ICANN lub tradycyjnych DNS?
 							</summary>
 							<p>
 								Nie. Domeny NFT to tzw. alternatywne ścieżki. Oznacza to że nie
 								są częścią obecnego DNS.
 							</p>
 						</details>
-					</div>
-					<div class="faq-div">
+
 						<details>
-							<summary><h3>Czym są tokeny NFT?</h3></summary>
+							<summary>Czym są tokeny NFT?</summary>
 							<p>
 								Niewymienialny token – unikatowa, cyfrowa jednostka danych
 								oparta na architekturze blockchain, którą użytkownicy protokołu
@@ -588,10 +556,9 @@
 								wirtualne dzieła sztuki.
 							</p>
 						</details>
-					</div>
-					<div class="faq-div">
+
 						<details>
-							<summary><h3>Czym są w ogóle domeny NFT?</h3></summary>
+							<summary>Czym są w ogóle domeny NFT?</summary>
 							<p>
 								Domena NFT to unikalna domena reprezentowana przez pojedynczy
 								token NFT który łączy w sobie dwie istotne idee – są to adresy
@@ -609,11 +576,7 @@
 			<h1>Zainteresowny?</h1>
 			<p>Daj znać na:</p>
 			<div class="footer-icons">
-				<button
-					id="copy-btn"
-					onclick="copyMail()"
-					data-copymessage="Mail skopiowany!"
-				>
+				<button id="copy-btn">
 					<!-- <span class="copy-info">Mail skopiowany!</span> -->
 					<i class="fa-solid fa-envelope"></i>
 				</button>
@@ -642,7 +605,7 @@
 				</p>
 			</div>
 		</footer>
-		<script scr="script-toggle.js"></script>
+		<script scr="script.js"></script>
 		<script src="copytext.js"></script>
 	</body>
 </html>
